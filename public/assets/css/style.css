@@ -1,0 +1,53 @@
+.image_v_icon{
+    height: 60px;
+    width: 60px;
+}
+.card_style_v:hover{
+    border-color: blueviolet;
+    transition: 2s;
+    /* width: 20px; */
+    /* height: 20px; */
+    /* background-color: aliceblue; */
+}
+.footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    /* display: none; */
+}
+.footer:hover{
+    background-color: #f8f9fa;
+    text-align: center;
+    animation: effect 2s linear infinite;
+    font-size: 30px;
+    font-weight: bolder;
+    /* display: none; */
+}
+.footer:hover span {
+    display: none
+}
+.footer:hover::after{
+    content: " DVS Since 2023";
+}
+.h_v{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.h_v:hover{
+    animation: effect 2s linear infinite;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.h_v:hover span{
+    display: none;
+}
+.h_v:hover::after{
+    content: "DVS";
+}
+@keyframes effect{
+    0% {color: red;}
+    25% {color: yellow;}
+    75% {color: blueviolet;}
+    100% {color: aqua;}
+}
