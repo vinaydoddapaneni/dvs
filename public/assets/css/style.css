@@ -19,7 +19,7 @@
 .footer:hover{
     background-color: #f8f9fa;
     text-align: center;
-    animation: effect 2s linear infinite;
+    animation: effect 5s linear infinite;
     font-size: 30px;
     font-weight: bolder;
     /* display: none; */
@@ -35,7 +35,7 @@
     font-weight: bolder;
 }
 .h_v:hover{
-    animation: effect 2s linear infinite;
+    animation: effect 5s linear infinite;
     font-size: 30px;
     font-weight: bolder;
 }
