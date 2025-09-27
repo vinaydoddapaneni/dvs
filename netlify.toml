@@ -4,8 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "20.0.0"
-  NPM_VERSION = "10.0.0"
-  YARN_VERSION = "1.22.0"
+  NPM_VERSION = "9.6.7"  # Compatible with Node.js 20.0.0
+  YARN_VERSION = "1.22.19"  # Updated to latest stable
 
 [build.image]
   # Use the latest Ubuntu 22.04 based build image
