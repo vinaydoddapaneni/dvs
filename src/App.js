@@ -88,7 +88,7 @@ function App() {
                 lineHeight: 1.7,
                 color: '#b0b0b0',
                 fontWeight: 400,
-              }}>&copy; {new Date().getFullYear()} Vinay. All rights reserved.</p>
+              }}>&copy; {new Date().getFullYear() === 2025 ? '2025' : `2025-${new Date().getFullYear()}`} Vinay. All rights reserved.</p>
               <p style={{
                 margin: 0,
                 fontSize: '1rem',

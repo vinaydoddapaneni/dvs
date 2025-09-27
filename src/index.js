@@ -1,7 +1,16 @@
+/**
+ * @copyright 2025 Vinay. All Rights Reserved.
+ * Unauthorized copying, modification, or distribution of this code is strictly prohibited.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import initProtection from './utils/protection';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Initialize protection
+initProtection();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

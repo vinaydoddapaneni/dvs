@@ -14,6 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "update-license": "node scripts/update-license.js",
+    "prestart": "npm run update-license",
+    "prebuild": "npm run update-license",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
