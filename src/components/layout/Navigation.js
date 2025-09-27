@@ -20,7 +20,8 @@ const Navigation = () => {
       // Update active section based on scroll position
       const sections = ['home', 'about', 'skills', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
-      let newActiveSection = activeSection;
+      // Use a local variable instead of state to track active section
+      let newActiveSection = activeSectionRef.current;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
@@ -64,7 +65,7 @@ const Navigation = () => {
     return () => {
       window.removeEventListener('scroll', throttledScroll);
     };
-  }, []); // No dependencies needed as we don't use any external values
+  }, []); // No dependencies needed as we use refs and don't need to re-run on state changes
 
   // Handle initial hash in URL and browser navigation (back/forward)
   useEffect(() => {

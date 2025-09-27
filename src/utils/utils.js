@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Easing function for smooth animation
 const easeInOutCubic = (t) => {

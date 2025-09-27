@@ -1,15 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
-// Animations
+// Animation
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-`;
-
-const gradient = keyframes`
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 `;
 
 // Styled Components

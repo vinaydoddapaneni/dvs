@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const float = keyframes`
   0%, 100% { transform: translateY(0px) rotate(0deg); }
