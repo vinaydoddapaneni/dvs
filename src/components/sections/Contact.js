@@ -72,7 +72,7 @@ const Contact = () => {
                     <path d="M12 6.667L12.5 7.5L13.5 7.5L12.833 8.167L13.333 9L12 8.333L10.667 9L11.167 8.167L10.5 7.5L11.5 7.5L12 6.667Z" fill="#FF9933"/>
                   </svg>
                 </FlagIcon>
-                <span>+91-7032695841</span>
+                <span>+91-9398023280</span>
               </ContactItem>
               <ContactItem>
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

@@ -32,15 +32,15 @@ const About = () => {
               </p>
               <AboutStats>
                 <Stat>
-                  <StatNumber>3+</StatNumber>
+                  <StatNumber>5+</StatNumber>
                   <StatLabel>Years Experience</StatLabel>
                 </Stat>
                 <Stat>
-                  <StatNumber>50+</StatNumber>
+                  <StatNumber>3+</StatNumber>
                   <StatLabel>Projects Completed</StatLabel>
                 </Stat>
                 <Stat>
-                  <StatNumber>20+</StatNumber>
+                  <StatNumber>2+</StatNumber>
                   <StatLabel>Happy Clients</StatLabel>
                 </Stat>
               </AboutStats>
