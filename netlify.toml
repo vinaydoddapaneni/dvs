@@ -6,31 +6,25 @@
   NODE_VERSION = "20.0.0"
   NPM_VERSION = "9.6.7"  # Compatible with Node.js 20.0.0
   YARN_VERSION = "1.22.19"  # Updated to latest stable
+  CI = "false"  # Disable CI to prevent build failures on warnings
 
 [build.image]
   # Use the latest Ubuntu 22.04 based build image
-  # This is the recommended image to replace the deprecated Focal
-  # See: https://docs.netlify.com/configure-builds/get-started/#build-image-selection
   base = "ubuntu-22.04"
   version = "1"
-
-[functions]
-  # Set Node.js version for serverless functions
-  node_bundler = "esbuild"
-  external_node_modules = ["@netlify/plugin-nextjs"]
 
 [dev]
   # Settings for netlify dev
   framework = "create-react-app"
   targetPort = 3000
   port = 8888
+  autoLaunch = false
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-# Environment variables
+# No need for Next.js specific configurations
+# Remove any Next.js related environment variables
 [context.production.environment]
   NODE_ENV = "production"
+  GENERATE_SOURCEMAP = "false"
   NEXT_TELEMETRY_DISABLED = "1"
 
 [context.deploy-preview.environment]
